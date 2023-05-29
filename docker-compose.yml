@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  portunus:
+    image: "portunus:${VERSION}"
+    volumes:
+      - type: bind
+        source: "${VOLUME_SRC}"
+        target: /
